@@ -1,33 +1,33 @@
 .parrot {
   width: 460px;
-  position: absolute;
-  top: -60px;
-  left: 146px;
+  position: relative;
+
+  left: 28%;
+  top: -57px;
   z-index: 1;
 }
 
 @media (max-width: 1024px) {
   .parrot {
-    left: 90px;
+    left: 22%;
   }
 }
 
 @media (max-width: 900px) {
   .parrot {
-    left: 50px;
-    top: -17px;
+    left: 10%;
+    top: -13px;
   }
 }
 
 @media (max-width: 768px) {
   .parrot {
-    top: 253px;
-    left: 50px;
+    top: 251px;
   }
 }
 
 @media (max-width: 481px) {
   .parrot {
-    left: 13px;
+    left: -2%;
   }
 }
