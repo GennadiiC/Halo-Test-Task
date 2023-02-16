@@ -2,7 +2,9 @@
   transition: all 0.5s ease-in-out;
 }
 
-.header {
+.header { 
+  position: relative;
+  z-index: 3;
   width: 88.9%;
   height: 120px;
   display: flex;
@@ -22,7 +24,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    z-index: 3;
+    z-index: 2;
     position: absolute;
     top: 108px;
     left: 0;
@@ -54,7 +56,7 @@
 
 .menuBtn {
   position: relative;
-  z-index: 1;
+  z-index: 4;
   top: 0.4rem;
   width: 22px;
   height: 17px;
