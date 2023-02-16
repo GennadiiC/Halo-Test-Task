@@ -1,0 +1,26 @@
+.circleButton {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  clip-path: circle();
+  background: #F2726C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.minus {
+  position: absolute;
+  height: 2px;
+  width: 35%;
+  background: #FFFFFF;
+}
+
+.plus {
+  transform: rotate(0.25turn);
+}

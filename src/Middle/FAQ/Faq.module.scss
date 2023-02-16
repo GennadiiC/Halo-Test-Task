@@ -1,0 +1,152 @@
+.faq {
+  margin: 95px 0;
+  width: 100%;
+  height: 389px;
+  display: flex;
+  justify-content: space-between;
+} 
+
+.left, .right {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.left {
+  justify-content: space-between;
+
+  .textWrapper, .buttonWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textWrapper {
+    flex-direction: column;
+    
+    justify-content: space-between;
+    display: flex;
+    height: 55%;
+    
+    h1 {
+      height: fit-content;
+      margin: 0;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 56px;
+      text-transform: capitalize;
+      color: #222433;
+    }
+  
+    p {
+      transition: all 1s;
+      display: block;
+      height: fit-content;
+      margin: 0;
+      width: 82%;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.1em;
+      line-height: 32px;
+      color: #1E1A20;
+      mix-blend-mode: normal;
+      opacity: 0.9;
+    }
+  }
+
+
+  .buttonWrapper {
+    height: 45%;
+    justify-content: center;
+
+    button {
+      width: 166px;
+      height: 48px;
+      background: #F2726C;
+      border-radius: 30px;
+      border: none;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      &:active {
+        color: #F2726C;
+        background: #1E1A20;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .faq {
+    height: 750px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .left {
+    .textWrapper {
+      height: 47%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .faq {
+    height: 800px;
+  }
+
+  .left {
+    .textWrapper {
+      p {
+        width: 92%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .faq {
+    height: 699px;
+    width: 90%;
+  }
+
+  .left {
+    height: 75%;
+    justify-content: center;
+
+    .textWrapper {
+      height: 55%;
+      h1 {
+        font-size: 28px;
+        line-height: 150%;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 175%;
+
+      }
+    }
+
+    .buttonWrapper {
+      height: 45%;
+    }
+  }
+
+}
+

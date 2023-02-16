@@ -1,0 +1,51 @@
+.indicator {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30%;
+  height: 20%;
+}
+
+.wrapper {
+  height: fit-content;
+  width: 136px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+  button {
+    width: 8px;
+    height: 15px;  
+    background: transparent;
+    border: none;
+  }
+}
+
+.text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+
+  span {
+    opacity: 0.4;
+  }
+}
+
+.chevron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8px;
+  cursor: pointer;
+  :active {
+    transform: scale(1.5);
+  }
+}
+
+.rotate {
+  transform: rotate(0.5turn);
+}
+

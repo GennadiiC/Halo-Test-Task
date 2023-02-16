@@ -1,0 +1,21 @@
+.middleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 78%;
+  align-items: center;
+  height: auto;
+  margin: 95px 0;
+}
+
+@media screen and (max-width: 1192px) {
+  .middleContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .middleContainer {
+    width: 100%;
+  }
+}

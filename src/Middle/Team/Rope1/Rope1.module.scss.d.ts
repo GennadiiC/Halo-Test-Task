@@ -1,0 +1,1 @@
+export const rope1: string

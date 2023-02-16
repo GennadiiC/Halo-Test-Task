@@ -1,0 +1,43 @@
+.girl {
+  position: absolute;
+  z-index: 2;
+  right: 63%;
+  top: 97px;
+  height: auto;
+
+  img {
+    width: 334px;
+  }
+}
+
+
+@media screen and (max-width: 1192px) {
+  .girl {
+    top: 200px;
+    right: 68.5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .girl {
+    right: 45%;
+    top: 240px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .girl {
+    right: 55%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .girl {
+    right: 62%;
+    top: 180px;
+    img {
+      width: 213px;
+    }
+    
+  }
+}

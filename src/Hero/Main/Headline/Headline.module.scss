@@ -1,0 +1,26 @@
+.headline {
+  width: 97%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .headline {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .headline {
+    width: 50%;
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headline {
+    width: 340px;
+    margin-top: 53px;
+    margin-bottom: 30px;
+  }
+}

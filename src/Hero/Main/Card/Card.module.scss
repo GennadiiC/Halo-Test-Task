@@ -1,0 +1,31 @@
+.card {
+  width: 270px;
+  position: absolute;
+  z-index: 2;
+  bottom: -25px;
+  left: 17%;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: 220px;
+    bottom: -80px;
+    left: -60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    left: -100px;
+    bottom: -100px;
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 210px;
+    bottom: -100px;
+    left: -90px;
+  }
+}

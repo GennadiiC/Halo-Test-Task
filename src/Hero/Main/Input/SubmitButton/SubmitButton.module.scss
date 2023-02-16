@@ -1,0 +1,28 @@
+.submitButton {
+  height: 78%;
+  width: 30%;
+  background: #F2726C;
+  border-radius: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  margin-right: 0.5em;
+
+  &:active {
+    color: #F2726C;
+    background: #000000;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .submitButton {
+    font-size: 12px;
+  }
+}

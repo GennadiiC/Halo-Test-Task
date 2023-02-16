@@ -1,0 +1,23 @@
+.beardMan {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+  img {
+    width: 323px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .beardMan {
+    top: -100px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .beardMan {
+    top: -50px;
+    img {
+      width: 200px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.link {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  color: #333333;
+  mix-blend-mode: normal;
+  text-decoration: none;
+  cursor: pointer;
+
+  &_clicked {
+    font-weight: 700;
+  }
+
+  &_menu {
+    font-size: 28px;
+    line-height: 150%;
+  }
+
+
+  &:hover {
+    transition: transform 1s;
+    transform: scale(1.2, 1.2);
+  }
+}

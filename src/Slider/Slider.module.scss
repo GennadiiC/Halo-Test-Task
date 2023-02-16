@@ -1,0 +1,28 @@
+@mixin flex($dir, $jt) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jt;
+  align-items: center;
+}
+
+.slider {
+  @include flex(column, flex-end);
+  height: 655px;
+  width: 100%;
+  background: #FFBD9E;
+  overflow: hidden;
+
+  .sliderWrapper {
+    position: relative;
+    width: 1800px;
+    height: 70%;
+    @include flex(row, space-around);
+    transition: all 0.5s;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .slider {
+    height: 491px;
+  }
+}

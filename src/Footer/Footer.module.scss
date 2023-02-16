@@ -1,0 +1,166 @@
+.footer {
+  width: 100%;
+  height: 336px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #F7F3F4;
+
+  .left, .middle, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 45%;
+  }
+
+
+  .left {
+
+    h1, p {
+      display: flex;
+      height: 50%;
+    }
+
+    h1 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 48px;
+      text-transform: uppercase;
+      color: #333333;
+    }
+
+    p {
+      width: 50%;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      color: #333333;
+      mix-blend-mode: normal;
+    }
+  }
+
+  .middle {
+
+    h3, p {
+      display: flex;
+      height: 50%;
+    }
+
+    h3 {
+      margin-top: 5px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.3px;
+      color: #333333;
+      mix-blend-mode: normal;
+    }
+
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      color: #333333;
+      mix-blend-mode: normal;
+    }
+  }
+
+  .right {
+
+    h3, .iconWrapper {
+      display: flex;
+      height: 50%;
+    }
+
+    h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.3px;
+      color: #333333;
+      mix-blend-mode: normal;
+      width: 100%;
+    }
+
+    .iconWrapper {
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 334px;
+    flex-wrap: wrap;
+
+    .middle, .right {
+      align-self: flex-start;
+      height: 35%;
+    }
+
+    .left {
+      margin-top: 15px;
+      height: 30%;
+      width: 85%;
+
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 12px;
+        width: 100%;
+      }
+    }
+  
+    .middle, .right {
+      height: 40%;
+      width: 35%;
+    }
+
+    .middle {
+      justify-content: flex-start;
+
+      h3 {
+        margin-top: 0;
+        font-size: 18px;
+        height: 35%;
+      }
+
+      p {
+        height: 30%;
+        font-size: 12px;
+      }
+    }
+
+    .right {
+      justify-content: flex-start;
+      h3 {
+        height: 35%;
+        font-size: 18px;
+        margin-top: 0;
+      }
+
+      .iconWrapper {
+        height: 30%;
+        width: 121px;
+      }
+    }
+  }
+
+}

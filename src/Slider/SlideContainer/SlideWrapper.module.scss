@@ -1,0 +1,117 @@
+@mixin flex($dir, $jc) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jc;
+  align-items: center;
+}
+
+@mixin transition-ease {
+  transition: all 1s ease-in-out;
+}
+
+.sliderWrapper {
+  @include flex(column, center);
+  height: 100%;
+  position: relative;
+}
+
+img {
+  @include transition-ease;
+  position: absolute;
+  z-index: 1;
+}
+
+.imgMiddle {
+  @include transition-ease;
+  top: 20px;
+  left: 70px;
+  width: 186px;
+}
+
+
+
+.text {
+  position: absolute;
+  z-index: 2;
+  @include flex(row, center);
+
+  h1, p {
+    @include transition-ease;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+
+  h1 {
+    @include transition-ease;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+  }
+} 
+
+.textMiddle {
+  @include transition-ease;
+  @include flex(column, flex-end);
+  width: 60%;
+  bottom: 140px;
+  h1 {
+    color: #1E1A20;
+  }
+}
+
+.whiteBack {
+  @include transition-ease;
+  position: absolute;
+  width: 435px;
+  top: 50px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 481px) {
+
+  .whiteBack {
+    @include transition-ease;
+    width: 325px;
+    top: 40px;
+  }
+
+  .text {
+    
+    h1 {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 7px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 175%;
+    }
+  }
+
+  .textMiddle {
+    width: 53%;
+    bottom: 95px;
+  }
+
+  .imgMiddle {
+    width: 125px;
+    left: 100px;
+    top: 2px;
+  }
+}

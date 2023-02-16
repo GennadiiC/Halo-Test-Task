@@ -1,0 +1,33 @@
+.rope2 {
+  position: absolute;
+  z-index: 1;
+  left: 55%;
+  top: 135px;
+  width: 378px;
+  height: 205px;
+}
+
+@media screen and (max-width: 1192px) {
+  .rope2 {
+    transform: rotate(0.14turn);
+    top: 240px;
+    left: 53%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .rope2 {
+    transform: rotate(0.4turn);
+    top: 420px;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .rope2 {
+    left: 5%;
+    top: 270px;
+    width: 234.56px;
+    transform: rotate(0.35turn);
+  }
+}

@@ -1,0 +1,34 @@
+.parrot {
+  width: 460px;
+  position: absolute;
+  top: -60px;
+  left: 146px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .parrot {
+    left: 90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .parrot {
+    left: 50px;
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .parrot {
+    width: 450px;
+    top: 260px;
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .parrot {
+    left: 13px;
+  }
+}

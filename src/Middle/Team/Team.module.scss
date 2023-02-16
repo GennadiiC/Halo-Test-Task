@@ -1,0 +1,98 @@
+@mixin flex ($dir, $jc) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jc;
+}
+
+.team {
+  height: 516px;
+  width: 100%;
+  margin: 95px 0;
+}
+
+.text {
+  height: 28%;
+  @include flex(column, space-between);
+
+  h1 {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #222433;
+  }
+
+  p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #1E1A20;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+  }
+}
+
+.svgContainer {
+  height: 72%;
+  position: relative;
+  display: flex;
+}
+
+@media screen and (max-width: 1192px) {
+  .team {
+    height: 900px;
+  }
+
+  .svgContainer {
+    height: 80%;
+  }
+
+  .text {
+    @include flex(column, flex-start);
+
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .team {
+    height: 1200px;
+    margin-top: 150px;
+  }
+
+}
+
+@media screen and (max-width: 481px) {
+  .team {
+    height: 780px;
+    margin-top: 150px;
+    width: 90%;
+  }
+
+  .text {
+    h1 {
+      font-size: 28px;
+      line-height: 150%;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 175%;
+    }
+  }
+
+}
+
+
