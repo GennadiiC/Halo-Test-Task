@@ -15,16 +15,20 @@
   width: 50%;
   margin: 0;
   padding: 0;
-  height: 70%;
+  height: 75%;
 }
 
 
 
 .pInpContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
+  height: 100%;
   
   p {
-    display: block;
+    display: flex;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -37,7 +41,7 @@
 
 @media screen and (max-width: 1024px) {
   .main {
-    width: 82%;
+    width: 85%;
   }
 }
 
@@ -45,7 +49,7 @@
   .main {
     flex-direction: column;
     height: 982px;
-    width: 85%;
+    justify-content: flex-start;
   }
 
   .pInpContainer {
@@ -59,7 +63,7 @@
   }
 
   .left, .right {
-    height: 45%;
+    height: 40%;
   }
 
   .left {

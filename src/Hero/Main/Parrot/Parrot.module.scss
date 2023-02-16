@@ -6,30 +6,28 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .parrot {
     left: 90px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .parrot {
     left: 50px;
-    top: -40px;
+    top: -17px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .parrot {
-    width: 450px;
-    top: 260px;
-    left: 60px;
+    top: 253px;
+    left: 50px;
   }
 }
 
-@media screen and (max-width: 481px) {
+@media (max-width: 481px) {
   .parrot {
-    top: 215px;
     left: 13px;
   }
 }
