@@ -3,8 +3,6 @@
 }
 
 .header { 
-  position: relative;
-  z-index: 3;
   width: 88.9%;
   height: 120px;
   display: flex;
@@ -24,7 +22,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     top: 108px;
     left: 0;
